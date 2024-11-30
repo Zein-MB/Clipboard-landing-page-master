@@ -16,12 +16,6 @@ hiddenEls.forEach(el => {
 
 let goUpBtn = document.querySelector(".goup-button");
 
-window.addEventListener("load", () => {
-  if (window.scrollY < 700) {
-    goUpBtn.classList.add("inactive")
-  }
-})
-
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 700) {
     goUpBtn.classList.remove("inactive")
